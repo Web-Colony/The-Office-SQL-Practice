@@ -8,7 +8,7 @@ WHERE employee.emp_id IN (
 );
 
 -- Find all clients who are handles by the branch that Michael Scott manages
--- Assume you know Michael's ID
+-- Assuming you know Michael's ID
 SELECT  client.client_id,client.client_name
 FROM client
 WHERE client.branch_id = (
@@ -18,7 +18,7 @@ WHERE client.branch_id = (
 );
 
 -- Find all clients who are handles by the branch that Michael Scott manages
--- Assume you DONT'T know Michael's ID
+-- Assuming you DONT'T know Michael's ID
 SELECT  client.client_id,client.client_name
 FROM client
 WHERE client.branch_id = (
